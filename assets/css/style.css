@@ -139,6 +139,12 @@ a:focus {
     text-shadow: none;
 }
 
+/* styling for links to project websites */
+.link-to-project {
+    color: black;
+    text-shadow: none;
+}
+
 /* top navigation menu */
 .nav-flex-container {
     display: flex;
@@ -226,7 +232,7 @@ div.flex-work-item2 {
 }
 
 /* Heading for the code refactor work */
-p.code-refactor {
+p.main-project {
     text-align: center;
     line-height: 2.5rem;
     font-size: 2rem;
