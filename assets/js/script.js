@@ -1,0 +1,1 @@
+//hide the different sections until their heading is clicked on, then show them

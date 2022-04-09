@@ -1,5 +1,5 @@
 :root {
-    --text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,100);
+    --text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 100);
     --text-shadow-cyan: 0.1rem 0.1rem 1rem cyan;
     --text-shadow-white: 0.1rem 0.1rem 0.1rem rgb(255, 255, 255);
     --text-shadow-dblue: 0.1rem 0.1rem 1rem rgb(20, 37, 189);
@@ -10,18 +10,19 @@
     --contact-box-shadow-dblue: 0rem 0rem 1rem rgb(20, 37, 189);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-size: 1rem;
     height: 100%;
     width: 100%;
-    font-family:'Courier New', Courier, monospace;
-    background-color: rgba(220,238,248,100);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(220, 238, 248, 100);
     line-height: 2rem;
-    
+
 }
 
 header {
@@ -37,7 +38,7 @@ hr {
     align: center;
     border: 0;
     height: 0.2rem;
-    background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(1, 11, 102, 0.75), rgba(0,0,0,0))
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(1, 11, 102, 0.75), rgba(0, 0, 0, 0))
 }
 
 /* styling and positioning for main body text and headings */
@@ -47,7 +48,7 @@ main h2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    text-shadow: var(--text-shadow-white),0rem 0rem 1rem rgb(247,62,133);
+    text-shadow: var(--text-shadow-white), 0rem 0rem 1rem rgb(247, 62, 133);
 }
 
 section p {
@@ -67,7 +68,7 @@ section p {
     /* position and center the image so it scales for all screen sizes */
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 
 }
 
@@ -76,7 +77,7 @@ section p {
     text-align: left;
     color: var(--color);
     margin-left: 2rem;
-    
+
 }
 
 /* hero text font styling */
@@ -90,7 +91,7 @@ section p {
 
     /* make it glow! */
     text-shadow: 0.1rem 0.1rem 1rem cyan, var(--text-shadow);
-    
+
 }
 
 .hero-text p {
@@ -101,9 +102,9 @@ section p {
     word-spacing: -0.3rem;
 
     /* make it glow! */
-    text-shadow: 0rem 0rem 0.5rem black, 0rem 0rem 1rem rgb(247,62,133);
+    text-shadow: 0rem 0rem 0.5rem black, 0rem 0rem 1rem rgb(247, 62, 133);
     text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
-    
+
 }
 
 /* Navigation menu */
@@ -131,16 +132,14 @@ a {
 /* make the links and linked icons glow on hover */
 
 a:hover {
-    text-shadow: 0px 0px 8px
-    rgb(17, 238, 219), 0 0 15px
-    rgb(124, 137, 253);
+    text-shadow: 0px 0px 8px rgb(17, 238, 219), 0 0 15px rgb(124, 137, 253);
 
- }
+}
 
- /* box shadow colour needs to be inverted because of invert filter on icons */
+/* box shadow colour needs to be inverted because of invert filter on icons */
 .contact-icon:hover {
-    box-shadow: 0rem 0rem 2rem rgb(238, 17,36);
-   
+    box-shadow: 0rem 0rem 2rem rgb(238, 17, 36);
+
 }
 
 /* styling links for accessibility by adding underlines on the icons and focus for all anchors */
@@ -153,7 +152,7 @@ a:hover {
 a:focus {
     box-shadow: var(--box-shadow-focus);
     padding: 0.3rem;
-    
+
 }
 
 /* top navigation menu */
@@ -165,7 +164,7 @@ a:focus {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:flex-end;
+    justify-content: flex-end;
     white-space: nowrap;
     /* padding-right: 1rem; */
 }
@@ -208,7 +207,7 @@ div.major-flex-box-about2 {
     flex-shrink: 0;
     flex-basis: 0%;
     width: 100%;
- 
+
 }
 
 img.profile-pic {
@@ -227,7 +226,7 @@ div.about-me-flex {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 10%;
- 
+
 }
 
 /* styling and positioning of flexbox for the My Work section */
@@ -242,8 +241,9 @@ div.flex-work-containers {
     max-width: 100%;
     padding: 1rem;
 }
+
 div.flex-work-containers img {
-    width:100%;
+    width: 100%;
 }
 
 div.flex-work-item1 {
@@ -265,7 +265,7 @@ div.flex-work-item2 {
 /* Heading for the code refactor work */
 
 p.code-refactor {
-    text-align: center; 
+    text-align: center;
     line-height: 2.5rem;
     font-size: 2rem;
     font-weight: 600;
@@ -333,64 +333,64 @@ div.contact-flex-item1 {
     flex-basis: 100%;
 }
 
-    form.contact-form {
-        text-align: left;
-        line-height: 2rem;
-        margin: 1.5rem;
-        padding: 1.5rem;
-        text-shadow: var(--text-shadow-white);
-        box-shadow: var(--contact-box-shadow-dblue)
-    }
-    
-    form.contact-form label {
-        display:block;
-        margin-bottom: 1rem;
-        font-weight: 600;
+form.contact-form {
+    text-align: left;
+    line-height: 2rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    text-shadow: var(--text-shadow-white);
+    box-shadow: var(--contact-box-shadow-dblue)
+}
 
-    }
+form.contact-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
 
-    input {
-        width: 100%;
-    }
+}
 
-    input[type=text] {
-        padding: 0.5rem;
-        border-radius: 0.2rem;
-        outline: none;
-        margin-bottom: 1rem;
-       
-    }
+input {
+    width: 100%;
+}
 
-    input:hover {
-        box-shadow: var(--contact-box-shadow-cyan)
-    }
+input[type=text] {
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    outline: none;
+    margin-bottom: 1rem;
 
-    input:focus {
-        box-shadow: var(--box-shadow-focus);
-        border-color: var(--color);
+}
 
-    }
+input:hover {
+    box-shadow: var(--contact-box-shadow-cyan)
+}
 
-    textarea {
-        border-radius: 0.2rem;
-        outline: none;
-        width: 100%;
-    }
+input:focus {
+    box-shadow: var(--box-shadow-focus);
+    border-color: var(--color);
 
-    textarea:hover{
-        box-shadow: var(--contact-box-shadow-cyan)
-    }
+}
 
-    textarea:focus {
-        box-shadow: var(--box-shadow-focus);
-    }
+textarea {
+    border-radius: 0.2rem;
+    outline: none;
+    width: 100%;
+}
 
-    button {
-        /* reset browser defaults to zero */
+textarea:hover {
+    box-shadow: var(--contact-box-shadow-cyan)
+}
+
+textarea:focus {
+    box-shadow: var(--box-shadow-focus);
+}
+
+button {
+    /* reset browser defaults to zero */
     appearance: none;
     -webkit-appearance: none;
 
-    display:block;
+    display: block;
     padding: 0.5rem;
     margin-top: 1rem;
     box-shadow: var(--contact-box-shadow-dblue);
@@ -398,12 +398,12 @@ div.contact-flex-item1 {
     width: 6rem;
     font-weight: 600;
     text-align: center;
-    
+
 }
 
 button:hover {
     box-shadow: var(--contact-box-shadow-cyan);
-    cursor:pointer;
+    cursor: pointer;
     background-image: url(../images/heroimage.jpg);
     color: var(--color);
     text-shadow: var(--text-shadow);
@@ -414,7 +414,7 @@ button:hover {
 
 ul.contact {
     list-style-type: none;
-    text-align:center;
+    text-align: center;
     font-size: 1rem;
     margin-top: 1rem;
     padding-top: 0.5rem;
@@ -422,11 +422,11 @@ ul.contact {
 
 .contact-icon {
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    /* width: 32px;
+    height: 32px; */
     margin-right: 0.5rem;
     vertical-align: middle;
-    filter:invert();
+    filter: invert();
 }
 
 /* flexbox for contact icons */
@@ -439,7 +439,7 @@ ul.contact {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 .nav-flex-contact-item1 {
@@ -466,14 +466,14 @@ footer h3 {
 /* Make the website responsive for smaller screens with a media query */
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
     /* Also for some reason mob devices weren't loading the var(--heroimagenogradient) properly so...I've just individually set the bg image */
     .hero-image {
         background-image: url(/assets/images/heroimage.jpg);
 
-    
+
     }
 
     /* Adding this here because the linear gradient doesn't display properly on some mobile devices so the text needs to be changed slighly to increase readability */
@@ -482,53 +482,52 @@ footer h3 {
 
         /* make it glow! */
         text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
-        
-    }
-    
-    .flex-work-containers{
-        flex-grow: 1;
-        flex-shrink: 0;
-         flex-basis: 50%;
-         max-width: 50%
+
     }
 
-      /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
+    .flex-work-containers {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        max-width: 50%
+    }
+
+    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
 
     .nav-flex-container-contact {
         background-image: url(/assets/images/heroimage.jpg)
-   
     }
 
-      /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
+    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
 
     footer {
         background-image: url(/assets/images/heroimage.jpg);
-   
+
     }
 
-} 
+}
 
 @media screen and (max-width: 992px) {
 
-     /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
+    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
 
     .hero-image {
         background-image: url(../images/heroimage.jpg);
- 
+
 
     }
 
-    
+
     /* Adding this here because the linear gradient doesn't display properly on some mobile devices so the text needs to be changed slighly to increase readability */
 
     .hero-text p {
 
         /* make it glow! */
         text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
-        
+
     }
 
-    .flex-work-containers{
+    .flex-work-containers {
         flex-grow: 1;
         flex-shrink: 0;
         flex-basis: 33%;
@@ -538,34 +537,35 @@ footer h3 {
     /* Making the headings for the My Work flex box smaller on smaller screens */
 
     p.code-refactor {
-        text-align: center; 
+        text-align: center;
         line-height: 2rem;
         font-size: 2rem;
         font-weight: 600;
         text-shadow: var(--text-shadow-white), var(--text-shadow-dblue);
-    
+
     }
 
-    p.landing-page, p.cheat-sheet {
+    p.landing-page,
+    p.cheat-sheet {
         text-align: center;
         line-height: 2rem;
         font-size: 1rem;
         font-weight: 600;
         text-shadow: var(--text-shadow-white), var(--text-shadow-dblue);
-    
+
     }
 
-      /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
+    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
 
     .nav-flex-container-contact {
         background-image: url(../images/heroimage.jpg);
 
     }
 
-      /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
+    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
 
     footer {
         background-image: url(../images/heroimage.jpg);
 
     }
-} 
+}
