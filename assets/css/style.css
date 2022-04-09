@@ -20,7 +20,8 @@ body {
     height: 100%;
     width: 100%;
     font-family: "Hubballi", 'Courier New', Courier, monospace;
-    background-color: rgba(220, 238, 248, 100);
+    /* background-color: rgba(220, 238, 248, 100); */
+    background-image: url(../images/heroimage.jpg);
     line-height: 2rem;
 }
 
@@ -31,14 +32,14 @@ header {
 
 /* horizontal rule styling so it looks pretty */
 
-hr {
+/* hr {
     border: none;
     margin: 3rem;
     align: center;
     border: 0;
     height: 0.2rem;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(1, 11, 102, 0.75), rgba(0, 0, 0, 0))
-}
+} */
 
 /* styling and positioning for main body text and headings */
 
@@ -47,7 +48,11 @@ main h2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    text-shadow: var(--text-shadow-white), 0rem 0rem 1rem rgb(247, 62, 133);
+    font-weight: 800;
+}
+
+section.solid-bg {
+    background-color: rgba(220, 238, 248, 100);
 }
 
 section p {
@@ -64,15 +69,15 @@ section p {
 
 /* the hero image */
 .hero-image {
-    background-image: url(../images/heroimage.jpg);
-    height: 100%;
+    /* background-image: url(../images/heroimage.jpg); */
+    /* height: 100%;
     padding-bottom: 1rem;
-    margin: 0;
+    margin: 0; */
 
     /* position and center the image so it scales for all screen sizes */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 /* position the hero text */
@@ -261,9 +266,10 @@ p.code-refactor {
     text-align: center;
     line-height: 2.5rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
-    text-shadow: var(--text-shadow-white), var(--text-shadow-dblue);
+    /* text-shadow: var(--text-shadow-white); */
+    /* text-shadow: var(--text-shadow); */
 
 }
 
@@ -273,9 +279,9 @@ p.other-projects {
     text-align: center;
     line-height: 3rem;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
-    text-shadow: var(--text-shadow-white), var(--text-shadow-dblue);
+    /* text-shadow: var(--text-shadow-white); */
 }
 
 /* styling for contact form */
@@ -284,7 +290,7 @@ form {
     margin: 1rem;
 }
 
-section.contact-flex-box {
+div.contact-flex-box {
     /* just so I know where the borders are!
     border: 1px solid yellow; */
     display: flex;
@@ -388,7 +394,7 @@ ul.contact {
 .nav-flex-container-contact {
     /* Just so I can see the borders of the container
     border: 2px solid blueviolet; */
-    background-image: url(../images/heroimage.jpg);
+    /* background-image: url(../images/heroimage.jpg); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -408,7 +414,7 @@ ul.contact {
 footer {
     color: var(--color);
     text-shadow: var(--text-shadow-cyan), var(--text-shadow);
-    background-image: url(../images/heroimage.jpg);
+    /* background-image: url(../images/heroimage.jpg); */
     text-align: center;
     padding: 2rem;
 }
@@ -418,23 +424,25 @@ footer h3 {
     margin-bottom: 0rem;
 }
 
+/* hide class */
+.hidden {
+    display: none;
+}
+
+/* add transitions for click events */
+
+
 /* Make the website responsive for smaller screens with a media query */
 
 
 @media screen and (max-width: 768px) {
 
-    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
-    /* Also for some reason mob devices weren't loading the var(--heroimagenogradient) properly so...I've just individually set the bg image */
-    .hero-image {
-        background-image: url(/assets/images/heroimage.jpg);
-    }
-
     /* Adding this here because the linear gradient doesn't display properly on some mobile devices so the text needs to be changed slighly to increase readability */
 
-    .hero-text p {
-        /* make it glow! */
+    /* .hero-text p {
+        make it glow!
         text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
-    }
+    } */
 
     .flex-work-containers {
         flex-grow: 1;
@@ -450,35 +458,23 @@ footer h3 {
         flex-basis: 100%;
     }
 
-    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
-
-    .nav-flex-container-contact {
-        background-image: url(/assets/images/heroimage.jpg)
-    }
-
-    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
-
-    footer {
-        background-image: url(/assets/images/heroimage.jpg);
-    }
-
 }
 
 @media screen and (max-width: 992px) {
 
     /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
 
-    .hero-image {
+    /* .hero-image {
         background-image: url(../images/heroimage.jpg);
-    }
+    } */
 
 
     /* Adding this here because the linear gradient doesn't display properly on some mobile devices so the text needs to be changed slighly to increase readability */
 
-    .hero-text p {
-        /* make it glow! */
+    /* .hero-text p {
+        make it glow!
         text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
-    }
+    } */
 
     .flex-work-containers {
         flex-grow: 1;
@@ -511,17 +507,5 @@ footer h3 {
         font-size: 1rem;
         font-weight: 600;
         text-shadow: var(--text-shadow-white), var(--text-shadow-dblue);
-    }
-
-    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
-
-    .nav-flex-container-contact {
-        background-image: url(../images/heroimage.jpg);
-    }
-
-    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
-
-    footer {
-        background-image: url(../images/heroimage.jpg);
     }
 }
