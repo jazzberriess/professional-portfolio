@@ -55,6 +55,7 @@ section p {
     margin-left: 15%;
     margin-right: 15%;
     padding-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
 .bold {
@@ -87,7 +88,6 @@ section p {
     font-size: 3rem;
     line-height: 3rem;
     width: 100%;
-    padding-top: 2rem;
     margin-bottom: 2rem;
 
     /* make it glow! */
@@ -100,6 +100,7 @@ section p {
     line-height: 3.5rem;
     font-weight: 200;
     word-spacing: -0.3rem;
+    margin-bottom: 0rem;
 
     /* make it glow! */
     text-shadow: 0rem 0rem 0.5rem black, 0rem 0rem 1rem rgb(247, 62, 133);
@@ -117,6 +118,7 @@ nav {
 ul.navigation {
     list-style: none;
     text-align: end;
+    margin-bottom: 0rem;
 }
 
 /* link styling */
@@ -130,6 +132,8 @@ a {
 /* make the links and linked icons glow on hover */
 
 a:hover {
+    /* override default Skeleton link hover colour  */
+    color: #ffffff;
     text-shadow: 0px 0px 8px rgb(17, 238, 219), 0 0 15px rgb(124, 137, 253);
 }
 
@@ -276,6 +280,10 @@ p.other-projects {
 
 /* styling for contact form */
 
+form {
+    margin: 1rem;
+}
+
 section.contact-flex-box {
     /* just so I know where the borders are!
     border: 1px solid yellow; */
@@ -311,32 +319,9 @@ div.contact-form-container {
     flex: 1 0 50%;
 }
 
-
-div.contact-flex-item1 {
-    /* just so I know where the borders are!
-    border: 1px solid green;     */
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 100%;
-}
-
-form.contact-form {
-    text-align: left;
-    line-height: 2rem;
-    margin: 1.5rem;
-    padding: 1.5rem;
-    text-shadow: var(--text-shadow-white);
-    box-shadow: var(--contact-box-shadow-dblue)
-}
-
-form.contact-form label {
-    display: block;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
 input {
     width: 100%;
+    padding: 0.3rem;
 }
 
 input[type=text] {
@@ -369,22 +354,9 @@ textarea:focus {
     box-shadow: var(--box-shadow-focus);
 }
 
-button {
-    /* reset browser defaults to zero */
-    appearance: none;
-    -webkit-appearance: none;
-
-    display: block;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    box-shadow: var(--contact-box-shadow-dblue);
-    border-radius: 0.2rem;
-    width: 6rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-button:hover {
+/* add styling to make button input black background with white text */
+.button:hover,
+input[type="submit"]:hover {
     box-shadow: var(--contact-box-shadow-cyan);
     cursor: pointer;
     background-image: url(../images/heroimage.jpg);
@@ -400,7 +372,8 @@ ul.contact {
     text-align: center;
     font-size: 1rem;
     margin-top: 1rem;
-    padding-top: 0.5rem;
+    margin-bottom: 0rem;
+    padding-top: 1rem;
 }
 
 .contact-icon {
@@ -442,6 +415,7 @@ footer {
 
 footer h3 {
     font-size: 1.5rem;
+    margin-bottom: 0rem;
 }
 
 /* Make the website responsive for smaller screens with a media query */
@@ -467,6 +441,13 @@ footer h3 {
         flex-shrink: 0;
         flex-basis: 50%;
         max-width: 50%
+    }
+
+    .contact-container,
+    .contact-form-container {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100%;
     }
 
     /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
@@ -504,6 +485,13 @@ footer h3 {
         flex-shrink: 0;
         flex-basis: 33%;
         max-width: 33%
+    }
+
+    .contact-container,
+    .contact-form-container {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100%;
     }
 
     /* Making the headings for the My Work flex box smaller on smaller screens */

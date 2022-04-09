@@ -10,7 +10,9 @@
         integrity="sha384-eLT4eRYPHTmTsFGFAzjcCWX+wHfUInVWNm9YnwpiatljsZOwXtwV2Hh6sHM6zZD9" crossorigin="anonymous">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <link href="./assets/css/reset.css" rel="stylesheet">
+    <!-- <link href="./assets/css/reset.css" rel="stylesheet"> -->
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/skeleton.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <title>Christi's Professional Porfolio</title>
 </head>
@@ -63,7 +65,7 @@
                         and ability to <span class="bold">work as part of a successful team</span> are impeccible.
                     </p>
                     <p>I'm currently expanding my skillset to include backend tools and languages, starting with
-                        <span class="bold"> nodeJS</span> and <span class="bold">React</span>.
+                        <span class="bold"> Node.js</span> and <span class="bold">React</span>.
                     </p>
                     <p>I have two feline co-workers who sometimes like to help me with projects. They're both aspiring
                         Koding Kitties, who seemingly want to specialise in
@@ -121,22 +123,25 @@
                 </div>
             </div>
 
+            <!-- contact form -->
+            <div class="contact-form-container">
+                <form>
+                    <div class="row">
+                        <div class="six-columns">
+                            <label for="your-name">Your Name</label>
+                            <input class="u-max-full-width" type=" input" placeholder="Your Name" id="name-input">
+                        </div>
+                        <div class="six-columns">
+                            <label for="email-input">Your Email</label>
+                            <input class="u-max-full-width" type="email" placeholder="youremail@email.com"
+                                id="email-input">
+                        </div>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea class="" placeholder="Your Message" id="example-message"></textarea>
+                    <input class="button" type="submit" value="Submit">
 
-
-            <div class=contact-form-container>
-                <div class="contact-flex-item1">
-                    <h2 id="h2-contact-form">Contact Form</h2>
-
-                    <form class="contact-form">
-                        <label for="name"> Your name </label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name here!" />
-                        <label for="message"> Your Message </label>
-                        <textarea id="message" name="message" placeholder="Write your message here"></textarea>
-
-                        <button>Send</button>
-
-                    </form>
-                </div>
+                </form>
             </div>
         </section>
 
