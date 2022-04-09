@@ -190,6 +190,10 @@ img.profile-pic {
     display: flex;
 }
 
+figcaption {
+    text-align: center;
+}
+
 div.about-me-flex {
     flex-grow: 1;
     flex-shrink: 0;
