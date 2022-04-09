@@ -26,6 +26,7 @@ function displayProjects(event) {
 
     projects.classList.remove("hidden");
     aboutMe.classList.add("hidden");
+    contactDetails.classList.add("hidden")
 }
 
 function displayContact(event) {
@@ -34,6 +35,7 @@ function displayContact(event) {
 
     contactDetails.classList.remove("hidden");
     projects.classList.add("hidden");
+    aboutMe.classList.add("hidden");
 }
 
 aboutMeLink.addEventListener("click", displayAbout);

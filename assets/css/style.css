@@ -20,7 +20,6 @@ body {
     height: 100%;
     width: 100%;
     font-family: "Hubballi", 'Courier New', Courier, monospace;
-    /* background-color: rgba(220, 238, 248, 100); */
     background-image: url(../images/heroimage.jpg);
     line-height: 2rem;
 }
@@ -29,17 +28,6 @@ header {
     width: 100%;
     height: max-content;
 }
-
-/* horizontal rule styling so it looks pretty */
-
-/* hr {
-    border: none;
-    margin: 3rem;
-    align: center;
-    border: 0;
-    height: 0.2rem;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(1, 11, 102, 0.75), rgba(0, 0, 0, 0))
-} */
 
 /* styling and positioning for main body text and headings */
 
@@ -63,21 +51,10 @@ section p {
     margin-bottom: 0rem;
 }
 
+/* adding font weight to span elements in about me section */
+
 .bold {
     font-weight: 900;
-}
-
-/* the hero image */
-.hero-image {
-    /* background-image: url(../images/heroimage.jpg); */
-    /* height: 100%;
-    padding-bottom: 1rem;
-    margin: 0; */
-
-    /* position and center the image so it scales for all screen sizes */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 /* position the hero text */
@@ -90,7 +67,7 @@ section p {
 /* hero text font styling */
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     line-height: 3rem;
     width: 100%;
     margin-bottom: 2rem;
@@ -132,6 +109,14 @@ a {
     color: var(--color);
     text-shadow: var(--text-shadow);
     display: block;
+}
+
+.top-of-page {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: none;
 }
 
 /* make the links and linked icons glow on hover */
@@ -210,6 +195,7 @@ div.major-flex-box-about2 {
     flex-shrink: 0;
     flex-basis: 0%;
     width: 100%;
+    padding: 1rem;
 }
 
 img.profile-pic {
@@ -268,9 +254,6 @@ p.code-refactor {
     font-size: 2rem;
     font-weight: 700;
     white-space: nowrap;
-    /* text-shadow: var(--text-shadow-white); */
-    /* text-shadow: var(--text-shadow); */
-
 }
 
 /* Headings on smaller flex-work-items*/
@@ -281,7 +264,6 @@ p.other-projects {
     font-size: 1.5rem;
     font-weight: 700;
     white-space: nowrap;
-    /* text-shadow: var(--text-shadow-white); */
 }
 
 /* styling for contact form */
@@ -394,7 +376,6 @@ ul.contact {
 .nav-flex-container-contact {
     /* Just so I can see the borders of the container
     border: 2px solid blueviolet; */
-    /* background-image: url(../images/heroimage.jpg); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -414,7 +395,6 @@ ul.contact {
 footer {
     color: var(--color);
     text-shadow: var(--text-shadow-cyan), var(--text-shadow);
-    /* background-image: url(../images/heroimage.jpg); */
     text-align: center;
     padding: 2rem;
 }
@@ -429,20 +409,11 @@ footer h3 {
     display: none;
 }
 
-/* add transitions for click events */
-
-
 /* Make the website responsive for smaller screens with a media query */
 
 
 @media screen and (max-width: 768px) {
 
-    /* Adding this here because the linear gradient doesn't display properly on some mobile devices so the text needs to be changed slighly to increase readability */
-
-    /* .hero-text p {
-        make it glow!
-        text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
-    } */
 
     .flex-work-containers {
         flex-grow: 1;
@@ -461,20 +432,6 @@ footer h3 {
 }
 
 @media screen and (max-width: 992px) {
-
-    /* Removing the linear gradient from the hero image because apparently some mobiles don't like them over images*/
-
-    /* .hero-image {
-        background-image: url(../images/heroimage.jpg);
-    } */
-
-
-    /* Adding this here because the linear gradient doesn't display properly on some mobile devices so the text needs to be changed slighly to increase readability */
-
-    /* .hero-text p {
-        make it glow!
-        text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
-    } */
 
     .flex-work-containers {
         flex-grow: 1;
@@ -497,7 +454,6 @@ footer h3 {
         line-height: 2rem;
         font-size: 2rem;
         font-weight: 600;
-        text-shadow: var(--text-shadow-white), var(--text-shadow-dblue);
     }
 
     p.landing-page,
@@ -506,6 +462,6 @@ footer h3 {
         line-height: 2rem;
         font-size: 1rem;
         font-weight: 600;
-        text-shadow: var(--text-shadow-white), var(--text-shadow-dblue);
+
     }
 }
