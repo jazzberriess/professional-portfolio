@@ -145,6 +145,13 @@ a:focus {
     text-shadow: none;
 }
 
+/* styling for links to GitHub repos */
+.github-repo-link {
+    color: black;
+    text-shadow: none;
+    text-align: center;
+}
+
 /* top navigation menu */
 .nav-flex-container {
     display: flex;
@@ -218,10 +225,6 @@ div.flex-work-containers {
 
 div.flex-work-containers img {
     width: 100%;
-}
-
-img.gif {
-    width: min-content;
 }
 
 div.flex-work-item1 {
