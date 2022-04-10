@@ -22,7 +22,7 @@ Built using:
 * Font Awesome
 
 ## Usage
-[View the portfolio on GitHub Pages](https://github.com/jazzberriess/professional-portfolio)
+[View the portfolio on GitHub Pages](https://jazzberriess.github.io/professional-portfolio/)
 
 [View the GitHub Repo](https://github.com/jazzberriess/professional-portfolio)
 

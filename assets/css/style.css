@@ -220,6 +220,10 @@ div.flex-work-containers img {
     width: 100%;
 }
 
+img.gif {
+    width: min-content;
+}
+
 div.flex-work-item1 {
     max-width: 100%;
     flex: 2 0 100%;
