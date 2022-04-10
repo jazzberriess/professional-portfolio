@@ -274,7 +274,6 @@ div.contact-container {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
-    padding: 1rem;
     flex: 1 0 50%;
 }
 
@@ -392,8 +391,29 @@ footer h3 {
 /* Make the website responsive for smaller screens with a media query */
 @media screen and (max-width: 768px) {
 
-    .link-to-project {
-        inline-size: min-content;
+    /* reduce the margin on the header */
+    .header-text {
+        margin: 0.5rem;
+    }
+
+    /* reduce the spacing on the navigation so it doesn't wrap weird */
+    nav {
+        font-size: 1.2rem;
+        padding: 0rem;
+    }
+
+    .nav-flex-container {
+        padding-right: 0.5rem;
+    }
+
+    .nav-flex-item1 {
+        padding-right: 0.8rem;
+    }
+
+    /* reduce the margins on section paragraphs to avoid weird spacing when justifying text */
+    section p {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
 
@@ -415,8 +435,29 @@ footer h3 {
 
 @media screen and (max-width: 992px) {
 
-    .link-to-project {
-        inline-size: min-content;
+    /* reduce the margin on the header */
+    .header-text {
+        margin: 0.5rem;
+    }
+
+    /* reduce the spacing on the navigation so it doesn't wrap weird */
+    nav {
+        font-size: 1.2rem;
+        padding: 0rem;
+    }
+
+    .nav-flex-container {
+        padding-right: 0.5rem;
+    }
+
+    .nav-flex-item1 {
+        padding-right: 0.8rem;
+    }
+
+    /* reduce the margins on section paragraphs to avoid weird spacing when justifying text */
+    section p {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
 
