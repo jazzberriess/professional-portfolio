@@ -4,11 +4,11 @@
 
 A portfolio showcasing my best projects that I have built and/or collaborated on.
 
-1. A collaborative project between myself and Sushan Yue, Vicky Castro and Glenn Digal.
+1. A [collaborative project](https://github.com/jazzberriess/collab-what-pkmn-are-you) between myself and [Sushan Yue](https://github.com/AtlantaBlack), [Vicky Castro](https://github.com/vicchyx) and [Glenn Digal](https://github.com/gd741).
 
-2. A Weather Dashboard Application
+2. A [Weather Dashboard Application](https://github.com/jazzberriess/weather-dashboard)
 
-3. A Code Quiz
+3. A [Code Quiz Application](https://github.com/jazzberriess/code-quiz)
 
 ## Technologies Used
 
