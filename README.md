@@ -26,6 +26,10 @@ Built using:
 
 [View the GitHub Repo](https://github.com/jazzberriess/professional-portfolio)
 
+## Demo
+
+![Gif of final web application](./assets/images/professional-porfolio.gif)
+
 ## Resources
 * [CSS Tricks - Scroll to Top](https://css-tricks.com/need-to-scroll-to-the-top-of-the-page/)
 
