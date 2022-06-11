@@ -2,26 +2,29 @@
 
 ## Description
 
-A portfolio showcasing my best projects that I have built and/or collaborated on.
+A portfolio showcasing the best of my work in projects that I have built and collaborated on.
 
 1. A [collaborative project](https://github.com/jazzberriess/collab-what-pkmn-are-you) between myself and [Sushan Yue](https://github.com/AtlantaBlack), [Vicky Castro](https://github.com/vicchyx) and [Glenn Digal](https://github.com/gd741).
 
-2. A [Weather Dashboard Application](https://github.com/jazzberriess/weather-dashboard)
+2. [Book-taku](https://github.com/amiresf1983/Book-taku): a collaborative book library project between myself and [Jemima Siqqidui](https://github.com/JemimaSiddiqui), [Jinee Lee](https://github.com/msjinheelee), [Amir Esfandiari](https://github.com/amiresf1983) and [Andew Ouyang](https://github.com/andrewouyang64)
 
-3. A [Code Quiz Application](https://github.com/jazzberriess/code-quiz)
+3. A [Weather Dashboard Application](https://github.com/jazzberriess/weather-dashboard)
+
+4. A [Tech Blog Application](https://github.com/jazzberriess/tech-blog)
 
 ## Technologies Used
 
 Built using:
 
-* HTML
-* CSS
-* JavaScript
-* Skeleton
-* Google Fonts
-* Font Awesome
+- HTML
+- CSS
+- JavaScript
+- Skeleton
+- Google Fonts
+- Font Awesome
 
 ## Usage
+
 [View the portfolio on GitHub Pages](https://jazzberriess.github.io/professional-portfolio/)
 
 [View the GitHub Repo](https://github.com/jazzberriess/professional-portfolio)
@@ -31,11 +34,12 @@ Built using:
 ![Gif of final web application](./assets/images/professional-porfolio.gif)
 
 ## Resources
-* [CSS Tricks - Scroll to Top](https://css-tricks.com/need-to-scroll-to-the-top-of-the-page/)
 
-* [Skeleton Documentation](http://getskeleton.com/)
+- [CSS Tricks - Scroll to Top](https://css-tricks.com/need-to-scroll-to-the-top-of-the-page/)
 
-* [Stack Overflow - toggle using eventListener](https://stackoverflow.com/questions/35744051/javascript-toggle-click-using-eventlistener)
+- [Skeleton Documentation](http://getskeleton.com/)
+
+- [Stack Overflow - toggle using eventListener](https://stackoverflow.com/questions/35744051/javascript-toggle-click-using-eventlistener)
 
 ## License
 

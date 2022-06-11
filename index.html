@@ -1,205 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font awesome icons -->
-    <link href="https://use.fontawesome.com/releases/v6.1.0/css/all.css" rel="stylesheet"
-        integrity="sha384-eLT4eRYPHTmTsFGFAzjcCWX+wHfUInVWNm9YnwpiatljsZOwXtwV2Hh6sHM6zZD9" crossorigin="anonymous">
+    <link
+      href="https://use.fontawesome.com/releases/v6.1.0/css/all.css"
+      rel="stylesheet"
+      integrity="sha384-eLT4eRYPHTmTsFGFAzjcCWX+wHfUInVWNm9YnwpiatljsZOwXtwV2Hh6sHM6zZD9"
+      crossorigin="anonymous"
+    />
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS frameworks -->
-    <link href="./assets/css/normalize.css" rel="stylesheet">
-    <link href="./assets/css/skeleton.css" rel="stylesheet">
+    <link href="./assets/css/normalize.css" rel="stylesheet" />
+    <link href="./assets/css/skeleton.css" rel="stylesheet" />
 
     <!-- CSS stylesheet -->
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet" />
     <title>Christi's Professional Porfolio</title>
-</head>
+  </head>
 
-<!-- the header -->
+  <!-- the header -->
 
-<body>
+  <body>
     <header>
+      <nav id="top">
+        <ul
+          class="navigation nav-flex-container"
+          role="navigation"
+          aria-label="Primary navigation"
+        >
+          <li class="nav-flex-item1">
+            <a href="#about-me" aria-label="Skip to About Me" id="about-me-link"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-flex-item1">
+            <a
+              href="#my-work"
+              aria-label="Skip to My Work Portfolio"
+              id="my-projects-link"
+              >My Work</a
+            >
+          </li>
+          <li class="nav-flex-item1">
+            <a href="#contact" aria-label="Skip to Contact" id="contact-me-link"
+              >Contact</a
+            >
+          </li>
 
-        <nav id="top">
-            <ul class="navigation nav-flex-container" role="navigation" aria-label="Primary navigation">
-                <li class=" nav-flex-item1">
-                    <a href="#about-me" aria-label="Skip to About Me" id="about-me-link">About
-                        Me</a>
-                </li>
-                <li class=" nav-flex-item1"><a href="#my-work" aria-label="Skip to My Work Portfolio"
-                        id="my-projects-link">My
-                        Work</a>
-                </li>
-                <li class="nav-flex-item1"><a href="#contact" aria-label="Skip to Contact"
-                        id="contact-me-link">Contact</a></li>
-
-                <li class="nav-flex-item1"><a href="./assets/images/c-scap-technical-resume.pdf"
-                        aria-label="Download Resume">Resume</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-
-            <h1>Christi Scappatura</h1>
-            <p>Dreamer</p>
-            <p>Designer</p>
-            <p>Developer</p>
-
-        </div>
-
+          <li class="nav-flex-item1">
+            <a
+              href="./assets/images/c-scap-technical-resume.pdf"
+              aria-label="Download Resume"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <h1>Christi Scappatura</h1>
+        <p>Dreamer</p>
+        <p>Designer</p>
+        <p>Developer</p>
+      </div>
     </header>
 
     <!-- Main content: About me -->
 
     <main>
-        <section class="solid-bg" id="about-me">
-            <div class="major-flex-box-about1">
-                <div class="major-flex-box-about2">
-                    <figure>
-                        <img class="profile-pic" src="./assets/images/profile-image.jpg"
-                            alt="A photograph of Christi with one of their cats.">
-                        <figcaption>A photograph of Christi with one of their cats.</figcaption>
-                    </figure>
-                </div>
-                <div class="about-me-flex">
-                    <h2 id="about-me">About Me</h2>
-                    <p>I'm an enthusiastic junior to the world of web development. I have skills in <span
-                            class="bold">HTML5, CSS</span> and
-                        <span class="bold"> JavaScript</span>. I've also used libraries such as <span
-                            class="bold">jQuery</span> and CSS frameworks like <span class="bold">Bootstrap</span> and
-                        <span class="bold">Skeleton</span>. I have extensive experience in the customer service space,
-                        so my <span class="bold">interpersonal skills</span>
-                        and ability to <span class="bold">work as part of a successful team</span> are impeccible.
-                    </p>
-                    <p>I'm currently expanding my skillset to include backend tools and languages, starting with
-                        <span class="bold"> Node.js</span> and <span class="bold">React</span>.
-                    </p>
-                    <p>I have two feline co-workers who sometimes like to help me with projects. They're both aspiring
-                        Koding Kitties, who seemingly want to specialise in
-                        keyboard accessibility.</p>
-                </div>
+      <section class="solid-bg" id="about-me">
+        <div class="major-flex-box-about1">
+          <div class="major-flex-box-about2">
+            <figure>
+              <img
+                class="profile-pic"
+                src="./assets/images/profile-image.jpg"
+                alt="A photograph of Christi with one of their cats."
+              />
+              <figcaption>
+                A photograph of Christi with one of their cats.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="about-me-flex">
+            <h2 id="about-me">About Me</h2>
+            <p>
+              I'm an enthusiastic full-stack junior to the world of web
+              development. For front-end development, I have skills in
+              <span class="bold">HTML5, CSS</span> and
+              <span class="bold"> JavaScript</span>. I've also used libraries
+              such as <span class="bold">jQuery</span> and CSS frameworks like
+              <span class="bold">Bootstrap</span> and
+              <span class="bold">Skeleton</span>. For back-end development, I
+              have experience in node.js, express, a variety of npm's, SQL,
+              MySQL databases and the Sequelize ORM. I've also used Insomnia for
+              API testing and the Heroku platform to deploy completed projects
+              on. Outside of web-specific skills, I have extensive experience in
+              the customer service space, so my
+              <span class="bold">interpersonal skills</span> and ability to
+              <span class="bold">work as part of a successful team</span> are
+              impeccible.
+            </p>
+            <p>
+              I'm currently expanding my skillset to include
+              <span class="bold">React</span>.
+            </p>
+            <p>
+              I have two feline co-workers who sometimes like to help me with
+              projects. They're both aspiring Koding Kitties, who seemingly want
+              to specialise in keyboard accessibility.
+            </p>
+          </div>
+        </div>
+
+        <a href="#top" aria-label="Skip to Navigation" class="top-of-page"
+          >Top</a
+        >
+      </section>
+
+      <!-- Main content: My Work -->
+
+      <section class="solid-bg hidden" id="projects">
+        <h2 id="my-work">My Work</h2>
+        <p>
+          A curated selection of some of the projects I've worked on. A full
+          collection of my work is available on GitHub. There, you can also find
+          the links to the deployed applications.
+        </p>
+        <p>Keep an eye on this space as I'm often updating what's on show.</p>
+        <p>
+          Clicking on the project title will take you to the live application
+          while clicking on the image will play a short gif of the app in
+          action.
+        </p>
+
+        <div class="flex-work-containers">
+          <div class="flex-work-item1">
+            <p class="main-project">
+              <a
+                href="https://jazzberriess.github.io/collab-what-pkmn-are-you/"
+                class="link-to-project"
+                >What Kind of Pokemon Are You?</a
+              >
+            </p>
+
+            <img
+              class="proj1 static"
+              id="main-project"
+              src="./assets/images/pokeball-splash-page.png"
+              alt="An image showing the What Kind of Pokemon Are You collaborative project I have worked on"
+            />
+            <p>
+              <a
+                href="https://github.com/jazzberriess/collab-what-pkmn-are-you"
+                class="github-repo-link"
+                >The 'What Kind of Pokemon Are you' GitHub Repo</a
+              >
+            </p>
+          </div>
+
+          <div class="flex-work-item2">
+            <p class="other-projects">
+              <a
+                href="https://jazzberriess.github.io/weather-dashboard/"
+                class="link-to-project"
+                >Weather Dashboard</a
+              >
+            </p>
+            <img
+              src="./assets/images/weather-dashboard-static.png"
+              class="weather static"
+              id="weather-dashboard-image"
+              alt="An image showing the Weather Dashboardproject I built."
+            />
+            <p>
+              <a
+                href="https://github.com/jazzberriess/weather-dashboard"
+                class="github-repo-link"
+                >The Weather Dashboard GitHub Repo</a
+              >
+            </p>
+          </div>
+
+          <div class="flex-work-item2">
+            <p class="other-projects">
+              <a
+                href="https://jazzberriess.github.io/code-quiz/"
+                class="link-to-project"
+                >Code Quiz</a
+              >
+            </p>
+            <img
+              src="./assets/images/code-quiz-splash-page.png"
+              class="quiz static"
+              id="code-quiz-image"
+              alt="An image showing the splash page of the Code Quiz project I created."
+            />
+            <p>
+              <a
+                href="https://github.com/jazzberriess/code-quiz"
+                class="github-repo-link"
+                >The Code Quiz GitHub Repo</a
+              >
+            </p>
+          </div>
+        </div>
+        <a href="#top" aria-label="Skip to Navigation" class="top-of-page"
+          >Top</a
+        >
+      </section>
+
+      <!-- Main content: Contact  -->
+
+      <section class="solid-bg hidden" id="contact-details">
+        <div class="contact-flex-box">
+          <div class="contact-container">
+            <div class="contact-flex-item1">
+              <h2 id="contact">Get in Touch</h2>
+              <p>
+                If you want to get in touch to discuss project or collaboration
+                opportunities, work opportunities or have any questions about my
+                work you can find me at GitHub and LinkedIn. You can also shoot
+                me an email or use the contact form on this page.
+              </p>
             </div>
+          </div>
 
-            <a href="#top" aria-label="Skip to Navigation" class="top-of-page">Top</a>
-
-        </section>
-
-        <!-- Main content: My Work -->
-
-        <section class="solid-bg hidden" id="projects">
-            <h2 id="my-work">My Work</h2>
-            <p>A curated selection of some of the projects I've worked on. A full collection of my works is available on
-                GitHub, where you can also find the links to the deployed applications.</p>
-            <p>Keep an eye on this space as I'm often updating what's on show.</p>
-            <p>Clicking on the project title will take you to the live application while clicking on the image will play
-                a short gif of the app in action.</p>
-
-            <div class="flex-work-containers">
-                <div class="flex-work-item1">
-                    <p class="main-project"><a href="https://jazzberriess.github.io/collab-what-pkmn-are-you/"
-                            class="link-to-project">What
-                            Kind of Pokemon Are You?</a></p>
-
-                    <img class="proj1 static" id="main-project" src="./assets/images/pokeball-splash-page.png"
-                        alt="An image showing the What Kind of Pokemon Are You collaborative project I have worked on">
-                    <p><a href="https://github.com/jazzberriess/collab-what-pkmn-are-you" class="github-repo-link">The
-                            'What Kind of Pokemon Are
-                            you' GitHub Repo</a></p>
+          <!-- Contact form -->
+          <div class="contact-form-container">
+            <form>
+              <div class="row">
+                <div class="six-columns">
+                  <label for="your-name">Your Name</label>
+                  <input
+                    class="u-max-full-width"
+                    type=" input"
+                    placeholder="Your Name"
+                    id="name-input"
+                  />
                 </div>
-
-                <div class="flex-work-item2">
-                    <p class="other-projects"><a href="https://jazzberriess.github.io/weather-dashboard/"
-                            class="link-to-project">Weather Dashboard</a></p>
-                    <img src="./assets/images/weather-dashboard-static.png" class="weather static"
-                        id="weather-dashboard-image" alt="An image showing the Weather Dashboardproject I built.">
-                    <p><a href="https://github.com/jazzberriess/weather-dashboard" class="github-repo-link">The
-                            Weather Dashboard GitHub
-                            Repo</a></p>
+                <div class="six-columns">
+                  <label for="email-input">Your Email</label>
+                  <input
+                    class="u-max-full-width"
+                    type="email"
+                    placeholder="youremail@email.com"
+                    id="email-input"
+                  />
                 </div>
+              </div>
+              <label for="message">Message</label>
+              <textarea
+                class=""
+                placeholder="Your Message"
+                id="example-message"
+              ></textarea>
+              <input class="button" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        <a href="#top" aria-label="Skip to Navigation" class="top-of-page"
+          >Top</a
+        >
+      </section>
 
-                <div class="flex-work-item2">
-                    <p class="other-projects"><a href="https://jazzberriess.github.io/code-quiz/"
-                            class="link-to-project">Code Quiz</a></p>
-                    <img src="./assets/images/code-quiz-splash-page.png" class="quiz static" id="code-quiz-image"
-                        alt="An image showing the splash page of the Code Quiz project I created.">
-                    <p><a href="https://github.com/jazzberriess/code-quiz" class="github-repo-link">The Code Quiz GitHub
-                            Repo</a></p>
-                </div>
-
-            </div>
-            <a href="#top" aria-label="Skip to Navigation" class="top-of-page">Top</a>
-        </section>
-
-
-        <!-- Main content: Contact  -->
-
-        <section class="solid-bg hidden" id="contact-details">
-            <div class="contact-flex-box">
-                <div class="contact-container">
-                    <div class="contact-flex-item1">
-                        <h2 id="contact">Get in Touch</h2>
-                        <p>If you want to get in touch to discuss project or collaboration opportunities, work
-                            opportunities or have any questions about my work you can
-                            find me at GitHub and LinkedIn. You can also shoot me an email or use the contact form on
-                            this page.</p>
-                    </div>
-                </div>
-
-                <!-- Contact form -->
-                <div class="contact-form-container">
-                    <form>
-                        <div class="row">
-                            <div class="six-columns">
-                                <label for="your-name">Your Name</label>
-                                <input class="u-max-full-width" type=" input" placeholder="Your Name" id="name-input">
-                            </div>
-                            <div class="six-columns">
-                                <label for="email-input">Your Email</label>
-                                <input class="u-max-full-width" type="email" placeholder="youremail@email.com"
-                                    id="email-input">
-                            </div>
-                        </div>
-                        <label for="message">Message</label>
-                        <textarea class="" placeholder="Your Message" id="example-message"></textarea>
-                        <input class="button" type="submit" value="Submit">
-
-                    </form>
-                </div>
-            </div>
-            <a href="#top" aria-label="Skip to Navigation" class="top-of-page">Top</a>
-        </section>
-
-        <section>
-
-            <ul class="contact nav-flex-container-contact" role="navigation" aria-label="Contact details">
-                <li class="nav-flex-contact-item1"><a href="https://github.com/jazzberriess"
-                        aria-label="Visit Christi's GitHub profile"><i class="fa-brands fa-github-square fa-2xl"
-                            alt="GitHub Icon"></i></a>
-                </li>
-                <li class=" nav-flex-contact-item1"><a href="https://www.linkedin.com/in/christi-s-0b71b62b/"
-                        aria-label="Visit Christi's LinkedIn profile."><i class="fa-brands fa-linkedin fa-2xl"
-                            alt="LinekedIn icon"></i></a>
-                </li>
-                <li class="nav-flex-contact-item1"><a href="mailto:cscapwebdev@gmail.com"
-                        aria-label="Send Christi an e-mail"><i class="fa-solid fa-envelope fa-2xl"
-                            alt="Email icon"></i></a>
-                </li>
-            </ul>
-
-        </section>
-
+      <section>
+        <ul
+          class="contact nav-flex-container-contact"
+          role="navigation"
+          aria-label="Contact details"
+        >
+          <li class="nav-flex-contact-item1">
+            <a
+              href="https://github.com/jazzberriess"
+              aria-label="Visit Christi's GitHub profile"
+              ><i
+                class="fa-brands fa-github-square fa-2xl"
+                alt="GitHub Icon"
+              ></i
+            ></a>
+          </li>
+          <li class="nav-flex-contact-item1">
+            <a
+              href="https://www.linkedin.com/in/christi-s-0b71b62b/"
+              aria-label="Visit Christi's LinkedIn profile."
+              ><i class="fa-brands fa-linkedin fa-2xl" alt="LinekedIn icon"></i
+            ></a>
+          </li>
+          <li class="nav-flex-contact-item1">
+            <a
+              href="mailto:cscapwebdev@gmail.com"
+              aria-label="Send Christi an e-mail"
+              ><i class="fa-solid fa-envelope fa-2xl" alt="Email icon"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <h3>Dreamed, designed and developed by &copy; Christi 2022</h3>
+      <h3>Dreamed, designed and developed by &copy; Christi 2022</h3>
     </footer>
     <script src="./assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
