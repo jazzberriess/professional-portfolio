@@ -44,7 +44,9 @@ contactLink.addEventListener('click', displayContact);
 
 // change the static project images to gifs when clicked on
 
-const codeQuizImage = document.getElementById('code-quiz-image');
+const teamProfileImage = document.getElementById(
+  'team-profile-generator-image'
+);
 
 const techBlogImage = document.getElementById('tech-blog-image');
 
@@ -72,7 +74,7 @@ function changeImageToGif(event) {
     mainProjectImage.classList.add('static');
   }
 
-  //swap weather dashboard static image to gif
+  //swap tech blog static image to gif
   if (
     event.target.classList.contains('tech-blog') &&
     event.target.classList.contains('static')
@@ -84,28 +86,31 @@ function changeImageToGif(event) {
     techBlogImage.classList.add('gif');
     techBlogImage.classList.remove('static');
   } else {
-    //swap weather dashboard gif to static image
+    //swap tech blog gif to static image
     techBlogImage.setAttribute('src', './assets/images/tech-blog-static.png');
     techBlogImage.classList.remove('gif');
     techBlogImage.classList.add('static');
   }
 
-  //swap code quiz static image to gif
+  //swap the team profile generator static image to gif
   if (
-    event.target.classList.contains('quiz') &&
+    event.target.classList.contains('team-profile') &&
     event.target.classList.contains('static')
   ) {
-    codeQuizImage.setAttribute('src', './assets/images/code-quiz-demo.gif');
-    codeQuizImage.classList.add('gif');
-    codeQuizImage.classList.remove('static');
-  } else {
-    //swap code quiz gif to static image
-    codeQuizImage.setAttribute(
+    teamProfileImage.setAttribute(
       'src',
-      './assets/images/code-quiz-splash-page.png'
+      './assets/images/team-profile-generator-prompts.gif'
     );
-    codeQuizImage.classList.add('static');
-    codeQuizImage.classList.remove('gif');
+    teamProfileImage.classList.add('gif');
+    teamProfileImage.classList.remove('static');
+  } else {
+    //swap the team profile generator gif to static image
+    teamProfileImage.setAttribute(
+      'src',
+      './assets/images/team-profile-generator-static.png'
+    );
+    teamProfileImage.classList.add('static');
+    teamProfileImage.classList.remove('gif');
   }
 }
 
@@ -113,4 +118,4 @@ mainProjectImage.addEventListener('click', changeImageToGif);
 
 techBlogImage.addEventListener('click', changeImageToGif);
 
-codeQuizImage.addEventListener('click', changeImageToGif);
+teamProfileImage.addEventListener('click', changeImageToGif);
