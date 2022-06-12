@@ -52,6 +52,8 @@ const techBlogImage = document.getElementById('tech-blog-image');
 
 const mainProjectImage = document.getElementById('main-project');
 
+const booktakuImage = document.getElementById('book-taku-image');
+
 function changeImageToGif(event) {
   //swap what kind of pokemon are you static image to gif
   if (
@@ -112,6 +114,22 @@ function changeImageToGif(event) {
     teamProfileImage.classList.add('static');
     teamProfileImage.classList.remove('gif');
   }
+
+  //swap book-taku static image to gif
+
+  if (
+    event.target.classList.contains('book-taku') &&
+    event.target.classList.contains('static')
+  ) {
+    booktakuImage.setAttribute('src', './assets/images/book-taku.gif');
+    booktakuImage.classList.add('gif');
+    booktakuImage.classList.remove('static');
+  } else {
+    //swap the book-taku gif to static image
+    booktakuImage.setAttribute('src', './assets/images/book-taku-static.png');
+    booktakuImage.classList.add('static');
+    booktakuImage.classList.remove('gif');
+  }
 }
 
 mainProjectImage.addEventListener('click', changeImageToGif);
@@ -119,3 +137,5 @@ mainProjectImage.addEventListener('click', changeImageToGif);
 techBlogImage.addEventListener('click', changeImageToGif);
 
 teamProfileImage.addEventListener('click', changeImageToGif);
+
+booktakuImage.addEventListener('click', changeImageToGif);
