@@ -1,470 +1,475 @@
 :root {
-    --text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 100);
-    --text-shadow-cyan: 0.1rem 0.1rem 1rem cyan;
-    --text-shadow-white: 0.1rem 0.1rem 0.1rem rgb(255, 255, 255);
-    --text-shadow-dblue: 0.1rem 0.1rem 1rem rgb(20, 37, 189);
-    --grey-scale: grayscale(100%);
-    --color: rgb(255, 255, 255);
-    --box-shadow-focus: 0rem 0rem 1rem rgb(247, 62, 133);
-    --contact-box-shadow-cyan: 0rem 0rem 0.3rem cyan;
-    --contact-box-shadow-dblue: 0rem 0rem 1rem rgb(20, 37, 189);
+  --text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 100);
+  --text-shadow-cyan: 0.1rem 0.1rem 1rem cyan;
+  --text-shadow-white: 0.1rem 0.1rem 0.1rem rgb(255, 255, 255);
+  --text-shadow-dblue: 0.1rem 0.1rem 1rem rgb(20, 37, 189);
+  --grey-scale: grayscale(100%);
+  --color: rgb(255, 255, 255);
+  --box-shadow-focus: 0rem 0rem 1rem rgb(247, 62, 133);
+  --contact-box-shadow-cyan: 0rem 0rem 0.3rem cyan;
+  --contact-box-shadow-dblue: 0rem 0rem 1rem rgb(20, 37, 189);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
-    font-size: 1.15rem;
-    height: 100%;
-    width: 100%;
-    font-family: "Hubballi", 'Courier New', Courier, monospace;
-    background-image: url(../images/blue-mist.jpg);
-    line-height: 2rem;
+  scroll-behavior: smooth;
+  font-size: 1.15rem;
+  height: 100%;
+  width: 100%;
+  font-family: 'Hubballi', 'Courier New', Courier, monospace;
+  background-image: url(../images/blue-mist.jpg);
+  line-height: 2rem;
 }
 
 header {
-    width: 100%;
-    height: max-content;
+  width: 100%;
+  height: max-content;
+}
+
+img {
+  width: 100vw;
 }
 
 /* position the header text */
 .header-text {
-    text-align: left;
-    color: var(--color);
-    margin-left: 2rem;
+  text-align: left;
+  color: var(--color);
+  margin-left: 2rem;
 }
 
 /* header text font styling */
 .header-text h1 {
-    font-size: 4.5rem;
-    line-height: 3rem;
-    width: 100%;
-    margin-bottom: 2rem;
+  font-size: 4.5rem;
+  line-height: 3rem;
+  width: 100%;
+  margin-bottom: 2rem;
 
-    /* make it glow! */
-    text-shadow: 0.1rem 0.1rem 1rem cyan, var(--text-shadow);
+  /* make it glow! */
+  text-shadow: 0.1rem 0.1rem 1rem cyan, var(--text-shadow);
 }
 
 .header-text p {
-    width: 100%;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    font-weight: 200;
-    word-spacing: -0.3rem;
-    margin-bottom: 0rem;
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 200;
+  word-spacing: -0.3rem;
+  margin-bottom: 0rem;
 
-    /* make it glow! */
-    text-shadow: 0rem 0rem 0.5rem black, 0rem 0rem 1rem rgb(247, 62, 133);
-    text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
+  /* make it glow! */
+  text-shadow: 0rem 0rem 0.5rem black, 0rem 0rem 1rem rgb(247, 62, 133);
+  text-shadow: 0rem 0rem 0.5rem white, 0rem 0rem 1rem rgb(247, 62, 133);
 }
 
 /* Navigation menu */
 nav {
-    padding: 0.5rem;
-    font-weight: 500;
-    font-size: 1.4rem;
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 
 ul.navigation {
-    list-style: none;
-    text-align: end;
-    margin-bottom: 0rem;
+  list-style: none;
+  text-align: end;
+  margin-bottom: 0rem;
 }
 
 /* styling and positioning for main body text and headings */
 main h2 {
-    font-size: 2.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: center;
-    font-weight: 800;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-weight: 800;
 }
 
 section.solid-bg {
-    background-color: rgba(220, 238, 248, 100);
+  background-color: rgba(220, 238, 248, 100);
 }
 
 section p {
-    text-align: justify;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 1rem;
-    margin-bottom: 0rem;
+  text-align: justify;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 /* adding font weight to span elements in about me section */
 .bold {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 /* link styling */
 a {
-    color: var(--color);
-    text-shadow: var(--text-shadow);
-    display: block;
+  color: var(--color);
+  text-shadow: var(--text-shadow);
+  display: block;
 }
 
 /* make the links and linked icons glow on hover */
 a:hover {
-    /* override default Skeleton link hover colour  */
-    color: #ffffff;
-    text-shadow: 0px 0px 8px rgb(17, 238, 219), 0 0 15px rgb(124, 137, 253);
+  /* override default Skeleton link hover colour  */
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgb(17, 238, 219), 0 0 15px rgb(124, 137, 253);
+}
+
+/* make the project titles and gitHub links more readable by changing the font colour on hover to a darker blue */
+.link-to-project:hover,
+.github-repo-link:hover {
+  /* override default Skeleton link hover colour  */
+  color: #221978;
+  text-shadow: 0px 0px 8px rgb(17, 238, 219), 0 0 15px rgb(124, 137, 253);
 }
 
 /* styling links for accessibility by adding focus for all anchors */
 
 a:focus {
-    box-shadow: var(--box-shadow-focus);
-    padding: 0.3rem;
+  box-shadow: var(--box-shadow-focus);
+  padding: 0.3rem;
 }
 
 /* styling for top of page link at the bottom of each section */
 .top-of-page {
-    text-align: center;
-    color: black;
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
-    text-shadow: none;
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-shadow: none;
 }
 
 /* styling for links to project websites */
 .link-to-project {
-    color: black;
-    text-shadow: none;
+  color: black;
+  text-shadow: none;
 }
 
 /* styling for links to GitHub repos */
 .github-repo-link {
-    color: black;
-    text-shadow: none;
-    text-align: center;
+  color: black;
+  text-shadow: none;
+  text-align: center;
 }
 
 /* top navigation menu */
 .nav-flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    white-space: nowrap;
-    padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+  padding-right: 1rem;
 }
 
 .nav-flex-item1 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 10%;
-    max-width: 100%;
-    padding-right: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10%;
+  max-width: 100%;
+  padding-right: 1rem;
 }
 
 /* styling and positioning for About Me flexbox */
 div.major-flex-box-about1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 div.major-flex-box-about2 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 0%;
-    width: 100%;
-    padding: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0%;
+  width: 100%;
+  padding: 1rem;
 }
 
 img.profile-pic {
-    width: 23rem;
-    height: auto;
-    border-radius: 5%;
-    display: flex;
+  width: 23rem;
+  height: auto;
+  border-radius: 5%;
+  display: flex;
 }
 
 figcaption {
-    text-align: center;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+  text-align: center;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 div.about-me-flex {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 10%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 10%;
 }
 
 /* styling and positioning of flexbox for the My Work section */
 div.flex-work-containers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 div.flex-work-containers img {
-    width: 100%;
+  width: 100%;
 }
 
 div.flex-work-item1 {
-    max-width: 100%;
-    flex: 2 0 100%;
+  max-width: 100%;
+  flex: 2 0 100%;
 }
 
 div.flex-work-item2 {
-    max-width: 100%;
-    padding: 1rem;
-    flex: 1 0 50%;
+  max-width: 100%;
+  padding: 1rem;
+  flex: 1 0 50%;
 }
 
 /* Heading for the code refactor work */
 p.main-project {
-    text-align: center;
-    line-height: 2.5rem;
-    font-size: 2rem;
-    font-weight: 700;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 /* Headings on smaller flex-work-items*/
 p.other-projects {
-    text-align: center;
-    line-height: 3rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    white-space: nowrap;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 /* contact section flex items */
 div.contact-flex-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 div.contact-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    flex: 1 0 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  flex: 1 0 50%;
 }
 
 div.contact-form-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    padding: 1rem;
-    flex: 1 0 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding: 1rem;
+  flex: 1 0 50%;
 }
 
 /* form styling */
 form {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 input {
-    width: 100%;
-    padding: 0.3rem;
+  width: 100%;
+  padding: 0.3rem;
 }
 
-input[type=text] {
-    padding: 0.5rem;
-    border-radius: 0.2rem;
-    outline: none;
-    margin-bottom: 1rem;
+input[type='text'] {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  outline: none;
+  margin-bottom: 1rem;
 }
 
 input:hover {
-    box-shadow: var(--contact-box-shadow-cyan)
+  box-shadow: var(--contact-box-shadow-cyan);
 }
 
 input:focus {
-    box-shadow: var(--box-shadow-focus);
-    border-color: var(--color);
+  box-shadow: var(--box-shadow-focus);
+  border-color: var(--color);
 }
 
 textarea {
-    border-radius: 0.2rem;
-    outline: none;
-    width: 100%;
+  border-radius: 0.2rem;
+  outline: none;
+  width: 100%;
 }
 
 textarea:hover {
-    box-shadow: var(--contact-box-shadow-cyan)
+  box-shadow: var(--contact-box-shadow-cyan);
 }
 
 textarea:focus {
-    box-shadow: var(--box-shadow-focus);
+  box-shadow: var(--box-shadow-focus);
 }
 
 /* add styling to make button input black background with white text */
 .button:hover,
-input[type="submit"]:hover {
-    box-shadow: var(--contact-box-shadow-cyan);
-    cursor: pointer;
-    background-image: url(../images/heroimage.jpg);
-    color: var(--color);
-    text-shadow: var(--text-shadow);
+input[type='submit']:hover {
+  box-shadow: var(--contact-box-shadow-cyan);
+  cursor: pointer;
+  background-image: url(../images/heroimage.jpg);
+  color: var(--color);
+  text-shadow: var(--text-shadow);
 }
-
 
 /* positioning contact icons*/
 ul.contact {
-    list-style-type: none;
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    padding-top: 1rem;
+  list-style-type: none;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  padding-top: 1rem;
 }
-
 
 /* flexbox for contact icons */
 .nav-flex-container-contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-flex-contact-item1 {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 33%;
-    max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33%;
+  max-width: 100%;
 }
 
 footer {
-    color: var(--color);
-    text-shadow: var(--text-shadow-cyan), var(--text-shadow);
-    text-align: center;
-    padding: 2rem;
+  color: var(--color);
+  text-shadow: var(--text-shadow-cyan), var(--text-shadow);
+  text-align: center;
+  padding: 2rem;
 }
 
 footer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0rem;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 /* hide class for javascript functions */
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* Make the website responsive for smaller screens with a media query */
 @media screen and (max-width: 768px) {
+  /* reduce the margin on the header */
+  .header-text {
+    margin: 0.5rem;
+  }
 
-    /* reduce the margin on the header */
-    .header-text {
-        margin: 0.5rem;
-    }
+  /* reduce the spacing on the navigation so it doesn't wrap weird */
+  nav {
+    font-size: 1.2rem;
+    padding: 0rem;
+  }
 
-    /* reduce the spacing on the navigation so it doesn't wrap weird */
-    nav {
-        font-size: 1.2rem;
-        padding: 0rem;
-    }
+  .nav-flex-container {
+    padding-right: 0.5rem;
+  }
 
-    .nav-flex-container {
-        padding-right: 0.5rem;
-    }
+  .nav-flex-item1 {
+    padding-right: 0.8rem;
+  }
 
-    .nav-flex-item1 {
-        padding-right: 0.8rem;
-    }
+  /* reduce the margins on section paragraphs to avoid weird spacing when justifying text */
+  section p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
-    /* reduce the margins on section paragraphs to avoid weird spacing when justifying text */
-    section p {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+  .flex-work-containers {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 
-
-    .flex-work-containers {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 100%;
-        max-width: 100%
-    }
-
-    .contact-container,
-    .contact-form-container {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 100%;
-    }
-
+  .contact-container,
+  .contact-form-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  /* reduce the margin on the header */
+  .header-text {
+    margin: 0.5rem;
+  }
 
-    /* reduce the margin on the header */
-    .header-text {
-        margin: 0.5rem;
-    }
+  /* reduce the spacing on the navigation so it doesn't wrap weird */
+  nav {
+    font-size: 1.2rem;
+    padding: 0rem;
+  }
 
-    /* reduce the spacing on the navigation so it doesn't wrap weird */
-    nav {
-        font-size: 1.2rem;
-        padding: 0rem;
-    }
+  .nav-flex-container {
+    padding-right: 0.5rem;
+  }
 
-    .nav-flex-container {
-        padding-right: 0.5rem;
-    }
+  .nav-flex-item1 {
+    padding-right: 0.8rem;
+  }
 
-    .nav-flex-item1 {
-        padding-right: 0.8rem;
-    }
+  /* reduce the margins on section paragraphs to avoid weird spacing when justifying text */
+  section p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
-    /* reduce the margins on section paragraphs to avoid weird spacing when justifying text */
-    section p {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+  .flex-work-containers {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 
+  .contact-container,
+  .contact-form-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
 
-    .flex-work-containers {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 100%;
-        max-width: 100%
-    }
-
-    .contact-container,
-    .contact-form-container {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 100%;
-    }
-
-    /* Making the headings for the My Work flex box smaller on smaller screens */
-    p.main-project {
-        text-align: center;
-        line-height: 2rem;
-        font-size: 2rem;
-        font-weight: 600;
-    }
+  /* Making the headings for the My Work flex box smaller on smaller screens */
+  p.main-project {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
 }
