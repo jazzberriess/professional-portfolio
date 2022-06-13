@@ -38,7 +38,7 @@ This portfolio was built using:
 
 ## Demo
 
-![Gif of final web application](./assets/images/professional-porfolio.gif)
+![Gif of final web application](./assets/images/updated-portfolio.gif)
 
 ## License
 
